@@ -6,7 +6,7 @@ export default function App(props) {
     return (
         <div className="app">
             {/* This should only show up on /about/foo, /about/bar, or /about/foo/bar */}
-            <Router path='/aboutAboutMenu />
+            <Router path='/about/:page' component={AboutMenu} />
         </div>
     );
 }
